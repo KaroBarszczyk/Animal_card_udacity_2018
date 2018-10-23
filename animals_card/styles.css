@@ -1,0 +1,113 @@
+body{
+	background-color: rgb(195, 219, 244);
+	font-style: 'Comfortaa';
+	font-size: 0.8em;
+}
+
+/*settings for transform card 3D*/
+.maincard{
+	height: 800px;
+	margin: 2% auto;
+	perspective:800px;
+	width: 320px;
+}
+
+.maincard:hover > .all_card{
+	transform: rotateY(180deg);
+}
+
+.all_card{
+	height: 800px;
+	position: relative;
+	transition: 0.9s;
+	transform-style:preserve-3d;
+	width: 320px;
+}
+
+.front_of_card{
+	backface-visibility:hidden;
+	height: 800px;
+	position: absolute;
+	width: 320px;
+}
+
+.back_of_card{
+	backface-visibility:hidden;
+	height: 800px;
+	position: absolute;
+	transform:rotateY(180deg);
+}
+
+/*styles for card*/
+.back_card_description, .front_card_description{
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Grass_dsc08672-nevit.jpg/1200px-Grass_dsc08672-nevit.jpg");
+	border: 8px double rgb(239, 242, 217);
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px rgba(5, 5, 5, 0.5);
+}
+
+img{
+	border: 1px solid rgb(239, 242, 217);
+  	border-radius: 20px;
+  	margin: 5px 9px 0px 9px;
+  	width: 300px;
+}
+
+/* styles for list items*/
+ul{
+	background-color: rgba(239, 242, 217, 0.8);
+	border: 1px solid rgb(212, 212, 212);
+	border-radius: 3px;
+	font-size: 0.8em;
+	list-style: none;
+	list-style-position: outside;
+	padding: 5px;
+}
+
+span{
+	font-weight: bold;
+	text-align: right;
+}
+
+div{
+	color: black;
+	font-size: 1.1em;
+	margin: 1px;
+	padding: 5px;
+	text-align: justify;
+}
+
+h2{
+	border: 1px solid;
+	border-radius: 10px;
+	color: rgb(239, 242, 217);
+	font-family: "Inder";
+	font-size: 1.4em;
+	margin: 15px auto;
+  	padding:10px;
+  	width: 60%;
+}
+
+p{
+	background-color: rgba(239, 242, 217, 0.8);
+	border: 1px solid rgb(212, 212, 212);
+	border-radius: 3px;
+	padding: 5px;
+}
+.front_card_description h2{
+	text-align: center;
+	width: 40%;
+}
+
+.front_card_description p{
+	margin: 580px auto;
+	font-size: 0.85em;
+	width: 80%;
+}
+
+
+.interest_facts{
+	font-style: italic;
+}
+
+
